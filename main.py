@@ -3,4 +3,16 @@ LEXICON={
 
 }
 
-NEGATIONS
+NEGATIONS = {"not", "no", "never", "hardly"}
+INTENSIFIERS = {"very": 2, "really": 2, "so": 2, "extremely": 3}
+
+USE_BUT_RULE = False
+USE_NEGATION_WINDOW = False
+USE_NEGATION_WINDOW = 3
+PUNCTUATION =  ".,!?:;\"'()"
+
+
+def clean_word(word):
+    return word.lower().strip(PUNCTUATION)
+
+def is_negative
